@@ -64,8 +64,4 @@ const Content: FC<IContent> = ({
   );
 };
 
-export default memo(
-  Content,
-  (prevProps, nextProps) =>
-    prevProps.stepState?.isActive === nextProps.stepState?.isActive
-);
+export default memo(Content);
